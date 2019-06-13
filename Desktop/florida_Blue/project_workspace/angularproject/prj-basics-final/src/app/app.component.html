@@ -1,0 +1,11 @@
+<app-header (valueChange) = "onNavigate($event)" ></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Hi Mit is here</h1>
+      <app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
+      <app-shopping-list *ngIf="loadedFeature !== 'recipe'"></app-shopping-list>
+      <h1>Hi Mit is not here</h1>
+    </div>
+  </div>
+</div>
